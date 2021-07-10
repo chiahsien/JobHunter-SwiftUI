@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    let fetchers: [String] = ["meet.jobs", "CakeResume", "Yourator"]
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        JobListView(fetchers: fetchers)
     }
 }
 
