@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52153FE52699F21F0086ED57 /* JobHunter_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FE42699F21F0086ED57 /* JobHunter_SwiftUIApp.swift */; };
+		52153FE52699F21F0086ED57 /* JobHunterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FE42699F21F0086ED57 /* JobHunterApp.swift */; };
 		52153FE72699F21F0086ED57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FE62699F21F0086ED57 /* ContentView.swift */; };
 		52153FE92699F2210086ED57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52153FE82699F2210086ED57 /* Assets.xcassets */; };
 		52153FEC2699F2210086ED57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52153FEB2699F2210086ED57 /* Preview Assets.xcassets */; };
@@ -15,7 +15,7 @@
 
 /* Begin PBXFileReference section */
 		52153FE12699F21F0086ED57 /* JobHunter-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JobHunter-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52153FE42699F21F0086ED57 /* JobHunter_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHunter_SwiftUIApp.swift; sourceTree = "<group>"; };
+		52153FE42699F21F0086ED57 /* JobHunterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHunterApp.swift; sourceTree = "<group>"; };
 		52153FE62699F21F0086ED57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52153FE82699F2210086ED57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52153FEB2699F2210086ED57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,11 +52,11 @@
 		52153FE32699F21F0086ED57 /* JobHunter-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				52153FE42699F21F0086ED57 /* JobHunter_SwiftUIApp.swift */,
-				52153FE62699F21F0086ED57 /* ContentView.swift */,
-				52153FE82699F2210086ED57 /* Assets.xcassets */,
-				52153FED2699F2210086ED57 /* Info.plist */,
 				52153FEA2699F2210086ED57 /* Preview Content */,
+				52153FE82699F2210086ED57 /* Assets.xcassets */,
+				52153FE62699F21F0086ED57 /* ContentView.swift */,
+				52153FED2699F2210086ED57 /* Info.plist */,
+				52153FE42699F21F0086ED57 /* JobHunterApp.swift */,
 			);
 			path = "JobHunter-SwiftUI";
 			sourceTree = "<group>";
@@ -126,8 +126,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52153FEC2699F2210086ED57 /* Preview Assets.xcassets in Resources */,
 				52153FE92699F2210086ED57 /* Assets.xcassets in Resources */,
+				52153FEC2699F2210086ED57 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52153FE72699F21F0086ED57 /* ContentView.swift in Sources */,
-				52153FE52699F21F0086ED57 /* JobHunter_SwiftUIApp.swift in Sources */,
+				52153FE52699F21F0086ED57 /* JobHunterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  JobHunter_SwiftUIApp.swift
+//  JobHunterApp.swift
 //  JobHunter-SwiftUI
 //
 //  Created by Nelson on 2021/7/10.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct JobHunter_SwiftUIApp: App {
+struct JobHunterApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
