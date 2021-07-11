@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4388F6E0571D5D23835B7B19 /* Pods_JobHunter_SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65326206F809A28882D0006B /* Pods_JobHunter_SwiftUI.framework */; };
 		52153FE52699F21F0086ED57 /* JobHunterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FE42699F21F0086ED57 /* JobHunterApp.swift */; };
 		52153FE72699F21F0086ED57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FE62699F21F0086ED57 /* ContentView.swift */; };
 		52153FE92699F2210086ED57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52153FE82699F2210086ED57 /* Assets.xcassets */; };
 		52153FEC2699F2210086ED57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52153FEB2699F2210086ED57 /* Preview Assets.xcassets */; };
 		52153FF42699F6160086ED57 /* JobListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FF32699F6160086ED57 /* JobListView.swift */; };
+		52153FF6269A9AAD0086ED57 /* JobItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FF5269A9AAD0086ED57 /* JobItemView.swift */; };
+		52153FF8269AA86F0086ED57 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FF7269AA86F0086ED57 /* JobModel.swift */; };
+		52153FFE269AD2AE0086ED57 /* YouratorFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FFA269AD2AE0086ED57 /* YouratorFetcher.swift */; };
+		52153FFF269AD2AE0086ED57 /* CakeResumeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FFB269AD2AE0086ED57 /* CakeResumeFetcher.swift */; };
+		52154000269AD2AE0086ED57 /* FetcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FFC269AD2AE0086ED57 /* FetcherProtocol.swift */; };
+		52154001269AD2AE0086ED57 /* MeetJobsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FFD269AD2AE0086ED57 /* MeetJobsFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B1E8F71323ECDDA61B7B8C7 /* Pods-JobHunter-SwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunter-SwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-JobHunter-SwiftUI/Pods-JobHunter-SwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		52153FE12699F21F0086ED57 /* JobHunter-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JobHunter-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52153FE42699F21F0086ED57 /* JobHunterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobHunterApp.swift; sourceTree = "<group>"; };
 		52153FE62699F21F0086ED57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +30,14 @@
 		52153FEB2699F2210086ED57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52153FED2699F2210086ED57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52153FF32699F6160086ED57 /* JobListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListView.swift; sourceTree = "<group>"; };
+		52153FF5269A9AAD0086ED57 /* JobItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobItemView.swift; sourceTree = "<group>"; };
+		52153FF7269AA86F0086ED57 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		52153FFA269AD2AE0086ED57 /* YouratorFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouratorFetcher.swift; sourceTree = "<group>"; };
+		52153FFB269AD2AE0086ED57 /* CakeResumeFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CakeResumeFetcher.swift; sourceTree = "<group>"; };
+		52153FFC269AD2AE0086ED57 /* FetcherProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetcherProtocol.swift; sourceTree = "<group>"; };
+		52153FFD269AD2AE0086ED57 /* MeetJobsFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetJobsFetcher.swift; sourceTree = "<group>"; };
+		65326206F809A28882D0006B /* Pods_JobHunter_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobHunter_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9757E2005546464B133115A /* Pods-JobHunter-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunter-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-JobHunter-SwiftUI/Pods-JobHunter-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4388F6E0571D5D23835B7B19 /* Pods_JobHunter_SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +57,8 @@
 			children = (
 				52153FE32699F21F0086ED57 /* JobHunter-SwiftUI */,
 				52153FE22699F21F0086ED57 /* Products */,
+				6F7C77E59A0E8B2C41669643 /* Pods */,
+				7582AD327D6995E8690745A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +73,13 @@
 		52153FE32699F21F0086ED57 /* JobHunter-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				52153FF9269AD2AE0086ED57 /* Fetcher */,
 				52153FEA2699F2210086ED57 /* Preview Content */,
 				52153FE82699F2210086ED57 /* Assets.xcassets */,
 				52153FE62699F21F0086ED57 /* ContentView.swift */,
 				52153FED2699F2210086ED57 /* Info.plist */,
 				52153FE42699F21F0086ED57 /* JobHunterApp.swift */,
+				52153FF5269A9AAD0086ED57 /* JobItemView.swift */,
 				52153FF32699F6160086ED57 /* JobListView.swift */,
 			);
 			path = "JobHunter-SwiftUI";
@@ -72,6 +93,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		52153FF9269AD2AE0086ED57 /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				52153FFB269AD2AE0086ED57 /* CakeResumeFetcher.swift */,
+				52153FFC269AD2AE0086ED57 /* FetcherProtocol.swift */,
+				52153FF7269AA86F0086ED57 /* JobModel.swift */,
+				52153FFD269AD2AE0086ED57 /* MeetJobsFetcher.swift */,
+				52153FFA269AD2AE0086ED57 /* YouratorFetcher.swift */,
+			);
+			path = Fetcher;
+			sourceTree = "<group>";
+		};
+		6F7C77E59A0E8B2C41669643 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B1E8F71323ECDDA61B7B8C7 /* Pods-JobHunter-SwiftUI.debug.xcconfig */,
+				A9757E2005546464B133115A /* Pods-JobHunter-SwiftUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7582AD327D6995E8690745A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65326206F809A28882D0006B /* Pods_JobHunter_SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52153FF02699F2210086ED57 /* Build configuration list for PBXNativeTarget "JobHunter-SwiftUI" */;
 			buildPhases = (
+				D7451ABB982F64DD634AECB9 /* [CP] Check Pods Manifest.lock */,
 				52153FDD2699F21F0086ED57 /* Sources */,
 				52153FDE2699F21F0086ED57 /* Frameworks */,
 				52153FDF2699F21F0086ED57 /* Resources */,
+				3412228C0C7CBA0641DFC5F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,14 +189,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3412228C0C7CBA0641DFC5F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobHunter-SwiftUI/Pods-JobHunter-SwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobHunter-SwiftUI/Pods-JobHunter-SwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobHunter-SwiftUI/Pods-JobHunter-SwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7451ABB982F64DD634AECB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JobHunter-SwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52153FDD2699F21F0086ED57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52153FFF269AD2AE0086ED57 /* CakeResumeFetcher.swift in Sources */,
 				52153FE72699F21F0086ED57 /* ContentView.swift in Sources */,
+				52154000269AD2AE0086ED57 /* FetcherProtocol.swift in Sources */,
 				52153FE52699F21F0086ED57 /* JobHunterApp.swift in Sources */,
+				52153FF6269A9AAD0086ED57 /* JobItemView.swift in Sources */,
 				52153FF42699F6160086ED57 /* JobListView.swift in Sources */,
+				52153FF8269AA86F0086ED57 /* JobModel.swift in Sources */,
+				52154001269AD2AE0086ED57 /* MeetJobsFetcher.swift in Sources */,
+				52153FFE269AD2AE0086ED57 /* YouratorFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +369,7 @@
 		};
 		52153FF12699F2210086ED57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1E8F71323ECDDA61B7B8C7 /* Pods-JobHunter-SwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +392,7 @@
 		};
 		52153FF22699F2210086ED57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9757E2005546464B133115A /* Pods-JobHunter-SwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
