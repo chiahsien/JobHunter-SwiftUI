@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct JobListView: View {
-    let fetchers: [String]
+    let sources: [Fetcher]
     var body: some View {
         NavigationView {
-            List(fetchers, id: \.self, rowContent: { fetcher in
-                Text(fetcher)
+            List(sources, id: \.name, rowContent: { source in
+                Text(source.name)
                     .font(.title)
                     .frame(height: 60.0)
             })
@@ -21,9 +21,9 @@ struct JobListView: View {
     }
 }
 
-struct JobItemView_Previews: PreviewProvider {
+struct JobListView_Previews: PreviewProvider {
     static var previews: some View {
-        let fetchers: [String] = ["meet.jobs", "CakeResume", "Yourator"]
-        JobListView(fetchers: fetchers)
+        let fetchers: [Fetcher] = [MeetJobsFetcher(), CakeResumeFetcher(), YouratorFetcher()]
+        JobListView(sources: fetchers)
     }
 }

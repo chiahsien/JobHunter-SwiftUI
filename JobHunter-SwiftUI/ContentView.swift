@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    let fetchers: [String] = ["meet.jobs", "CakeResume", "Yourator"]
+    let fetchers: [Fetcher] = [MeetJobsFetcher(), CakeResumeFetcher(), YouratorFetcher()]
 
     var body: some View {
-        JobListView(fetchers: fetchers)
+        JobListView(sources: fetchers)
     }
 }
 
