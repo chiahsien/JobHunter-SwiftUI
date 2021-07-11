@@ -15,11 +15,19 @@ struct JobListView: View {
             ForEach(viewModel.jobs, id: \.url) { job in
                 JobItemView(job: job)
             }
+
+            HStack {
+                Spacer()
+                ProgressView()
+                    .padding(20.0)
+                    .opacity(viewModel.isFetchingJobs ? 1 : 0)
+                    .onAppear(perform: {
+                        viewModel.fetchMoreJobs()
+                    })
+                Spacer()
+            }
         }
         .navigationTitle(viewModel.sourceName)
-        .onAppear(perform: {
-            viewModel.fetchJobs()
-        })
     }
 }
 
