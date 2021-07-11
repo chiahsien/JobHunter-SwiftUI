@@ -20,6 +20,7 @@
 		52154000269AD2AE0086ED57 /* FetcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FFC269AD2AE0086ED57 /* FetcherProtocol.swift */; };
 		52154001269AD2AE0086ED57 /* MeetJobsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FFD269AD2AE0086ED57 /* MeetJobsFetcher.swift */; };
 		52EE36BF269AE10900C56BB0 /* JobListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE36BE269AE10900C56BB0 /* JobListView.swift */; };
+		52EE36C2269AE4C700C56BB0 /* JobListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE36C1269AE4C700C56BB0 /* JobListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		52153FFC269AD2AE0086ED57 /* FetcherProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetcherProtocol.swift; sourceTree = "<group>"; };
 		52153FFD269AD2AE0086ED57 /* MeetJobsFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetJobsFetcher.swift; sourceTree = "<group>"; };
 		52EE36BE269AE10900C56BB0 /* JobListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListView.swift; sourceTree = "<group>"; };
+		52EE36C1269AE4C700C56BB0 /* JobListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobListViewModel.swift; sourceTree = "<group>"; };
 		65326206F809A28882D0006B /* Pods_JobHunter_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobHunter_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9757E2005546464B133115A /* Pods-JobHunter-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunter-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-JobHunter-SwiftUI/Pods-JobHunter-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +79,8 @@
 			children = (
 				52153FF9269AD2AE0086ED57 /* Fetchers */,
 				52153FEA2699F2210086ED57 /* Preview Content */,
-				52EE36BD269ADFC700C56BB0 /* Views */,
+				52EE36BD269ADFC700C56BB0 /* View Components */,
+				52EE36C0269AE4C700C56BB0 /* View Pages */,
 				52153FE82699F2210086ED57 /* Assets.xcassets */,
 				52153FE62699F21F0086ED57 /* ContentView.swift */,
 				52153FED2699F2210086ED57 /* Info.plist */,
@@ -106,14 +109,38 @@
 			path = Fetchers;
 			sourceTree = "<group>";
 		};
-		52EE36BD269ADFC700C56BB0 /* Views */ = {
+		52EE36BD269ADFC700C56BB0 /* View Components */ = {
 			isa = PBXGroup;
 			children = (
 				52153FF5269A9AAD0086ED57 /* JobItemView.swift */,
-				52EE36BE269AE10900C56BB0 /* JobListView.swift */,
+			);
+			path = "View Components";
+			sourceTree = "<group>";
+		};
+		52EE36C0269AE4C700C56BB0 /* View Pages */ = {
+			isa = PBXGroup;
+			children = (
+				52EE36C4269AE4FA00C56BB0 /* Job List */,
+				52EE36C3269AE4E800C56BB0 /* Job Source */,
+			);
+			path = "View Pages";
+			sourceTree = "<group>";
+		};
+		52EE36C3269AE4E800C56BB0 /* Job Source */ = {
+			isa = PBXGroup;
+			children = (
 				52153FF32699F6160086ED57 /* JobSourceView.swift */,
 			);
-			path = Views;
+			path = "Job Source";
+			sourceTree = "<group>";
+		};
+		52EE36C4269AE4FA00C56BB0 /* Job List */ = {
+			isa = PBXGroup;
+			children = (
+				52EE36BE269AE10900C56BB0 /* JobListView.swift */,
+				52EE36C1269AE4C700C56BB0 /* JobListViewModel.swift */,
+			);
+			path = "Job List";
 			sourceTree = "<group>";
 		};
 		6F7C77E59A0E8B2C41669643 /* Pods */ = {
@@ -252,6 +279,7 @@
 				52153FE52699F21F0086ED57 /* JobHunterApp.swift in Sources */,
 				52153FF6269A9AAD0086ED57 /* JobItemView.swift in Sources */,
 				52EE36BF269AE10900C56BB0 /* JobListView.swift in Sources */,
+				52EE36C2269AE4C700C56BB0 /* JobListViewModel.swift in Sources */,
 				52153FF8269AA86F0086ED57 /* JobModel.swift in Sources */,
 				52153FF42699F6160086ED57 /* JobSourceView.swift in Sources */,
 				52154001269AD2AE0086ED57 /* MeetJobsFetcher.swift in Sources */,

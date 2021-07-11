@@ -12,7 +12,7 @@ struct JobItemView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            HStack {
+            HStack(alignment: .top) {
                 Image(systemName: "applelogo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -33,6 +33,7 @@ struct JobItemView: View {
             if job.salary != nil {
                 JobDetailView(imageName: "dollarsign.circle", info: job.salary!, infoColor: .green)
             }
+
             if job.tags != nil && !job.tags!.isEmpty {
                 JobDetailView(imageName: "tag.circle", info: job.tags!.joined(separator: ", "), infoColor: .orange)
             }
@@ -51,9 +52,9 @@ struct JobDetailView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 24.0, height: 24.0)
             Text(info)
-                .font(.body)
                 .foregroundColor(infoColor)
         }
+        .padding(.horizontal, 8.0)
     }
 }
 
