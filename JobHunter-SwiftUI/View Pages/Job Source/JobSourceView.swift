@@ -12,9 +12,13 @@ struct JobSourceView: View {
     var body: some View {
         NavigationView {
             List(sources, id: \.name, rowContent: { source in
-                Text(source.name)
-                    .font(.title)
-                    .frame(height: 60.0)
+                NavigationLink(
+                    destination: JobListView(viewModel: JobListViewModel(fetcher: source)),
+                    label: {
+                        Text(source.name)
+                            .font(.title)
+                            .frame(height: 60.0)
+                    })
             })
             .navigationTitle("Job Hunter")
         }

@@ -11,14 +11,12 @@ struct JobListView: View {
     @StateObject var viewModel: JobListViewModel
 
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(viewModel.jobs, id: \.url) { job in
-                    JobItemView(job: job)
-                }
+        List {
+            ForEach(viewModel.jobs, id: \.url) { job in
+                JobItemView(job: job)
             }
-            .navigationTitle(viewModel.sourceName)
         }
+        .navigationTitle(viewModel.sourceName)
         .onAppear(perform: {
             viewModel.fetchJobs()
         })
