@@ -1,5 +1,5 @@
 //
-//  JobListView.swift
+//  JobSourceView.swift
 //  JobHunter-SwiftUI
 //
 //  Created by Nelson on 2021/7/10.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct JobListView: View {
+struct JobSourceView: View {
     let sources: [Fetcher]
     var body: some View {
         NavigationView {
@@ -21,9 +21,9 @@ struct JobListView: View {
     }
 }
 
-struct JobListView_Previews: PreviewProvider {
+struct JobSourceView_Previews: PreviewProvider {
     static var previews: some View {
         let fetchers: [Fetcher] = [MeetJobsFetcher(), CakeResumeFetcher(), YouratorFetcher()]
-        JobListView(sources: fetchers)
+        JobSourceView(sources: fetchers)
     }
 }

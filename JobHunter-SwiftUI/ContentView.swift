@@ -11,7 +11,7 @@ struct ContentView: View {
     let fetchers: [Fetcher] = [MeetJobsFetcher(), CakeResumeFetcher(), YouratorFetcher()]
 
     var body: some View {
-        JobListView(sources: fetchers)
+        JobSourceView(sources: fetchers)
     }
 }
 

@@ -12,7 +12,7 @@
 		52153FE72699F21F0086ED57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FE62699F21F0086ED57 /* ContentView.swift */; };
 		52153FE92699F2210086ED57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52153FE82699F2210086ED57 /* Assets.xcassets */; };
 		52153FEC2699F2210086ED57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52153FEB2699F2210086ED57 /* Preview Assets.xcassets */; };
-		52153FF42699F6160086ED57 /* JobListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FF32699F6160086ED57 /* JobListView.swift */; };
+		52153FF42699F6160086ED57 /* JobSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FF32699F6160086ED57 /* JobSourceView.swift */; };
 		52153FF6269A9AAD0086ED57 /* JobItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FF5269A9AAD0086ED57 /* JobItemView.swift */; };
 		52153FF8269AA86F0086ED57 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FF7269AA86F0086ED57 /* JobModel.swift */; };
 		52153FFE269AD2AE0086ED57 /* YouratorFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FFA269AD2AE0086ED57 /* YouratorFetcher.swift */; };
@@ -29,7 +29,7 @@
 		52153FE82699F2210086ED57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52153FEB2699F2210086ED57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52153FED2699F2210086ED57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52153FF32699F6160086ED57 /* JobListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListView.swift; sourceTree = "<group>"; };
+		52153FF32699F6160086ED57 /* JobSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSourceView.swift; sourceTree = "<group>"; };
 		52153FF5269A9AAD0086ED57 /* JobItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobItemView.swift; sourceTree = "<group>"; };
 		52153FF7269AA86F0086ED57 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
 		52153FFA269AD2AE0086ED57 /* YouratorFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouratorFetcher.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 				52153FED2699F2210086ED57 /* Info.plist */,
 				52153FE42699F21F0086ED57 /* JobHunterApp.swift */,
 				52153FF5269A9AAD0086ED57 /* JobItemView.swift */,
-				52153FF32699F6160086ED57 /* JobListView.swift */,
+				52153FF32699F6160086ED57 /* JobSourceView.swift */,
 			);
 			path = "JobHunter-SwiftUI";
 			sourceTree = "<group>";
@@ -240,8 +240,8 @@
 				52154000269AD2AE0086ED57 /* FetcherProtocol.swift in Sources */,
 				52153FE52699F21F0086ED57 /* JobHunterApp.swift in Sources */,
 				52153FF6269A9AAD0086ED57 /* JobItemView.swift in Sources */,
-				52153FF42699F6160086ED57 /* JobListView.swift in Sources */,
 				52153FF8269AA86F0086ED57 /* JobModel.swift in Sources */,
+				52153FF42699F6160086ED57 /* JobSourceView.swift in Sources */,
 				52154001269AD2AE0086ED57 /* MeetJobsFetcher.swift in Sources */,
 				52153FFE269AD2AE0086ED57 /* YouratorFetcher.swift in Sources */,
 			);
