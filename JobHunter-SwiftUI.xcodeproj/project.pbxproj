@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -111,7 +111,6 @@
 				2B1E8F71323ECDDA61B7B8C7 /* Pods-JobHunter-SwiftUI.debug.xcconfig */,
 				A9757E2005546464B133115A /* Pods-JobHunter-SwiftUI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
