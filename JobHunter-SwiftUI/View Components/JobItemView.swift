@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct JobItemView: View {
     var job: Job
@@ -13,18 +14,29 @@ struct JobItemView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack(alignment: .top) {
-                Image(systemName: "applelogo")
+                KFImage(job.logo)
+                    .placeholder {
+                        Image(systemName: "building.2")
+                            .font(.largeTitle)
+                            .opacity(0.3)
+                    }
+                    .cancelOnDisappear(true)
+                    .downsampling(size: CGSize(width: 50, height: 50))
+                    .scaleFactor(UIScreen.main.scale)
+                    .cacheOriginalImage()
                     .resizable()
+                    .backgroundDecode()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 50.0, height: 50.0)
-                VStack(alignment: .leading) {
+
+                VStack(alignment: .leading, spacing: 4.0) {
                     Text(job.title)
-                        .font(.title)
+                        .font(.title3)
                     Text(job.company)
                         .foregroundColor(.gray)
                 }
             }
-            .padding(.vertical, 12.0)
+            .padding(.bottom, 8.0)
 
             if job.location != nil {
                 JobDetailView(imageName: "mappin.circle", info: job.location!, infoColor: .black)
@@ -51,6 +63,7 @@ struct JobDetailView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 24.0, height: 24.0)
+                .foregroundColor(infoColor)
             Text(info)
                 .foregroundColor(infoColor)
         }

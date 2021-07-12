@@ -14,6 +14,7 @@ struct JobListView: View {
         List {
             ForEach(viewModel.jobs, id: \.url) { job in
                 JobItemView(job: job)
+                    .padding(.vertical, 8.0)
             }
 
             HStack {
@@ -28,6 +29,7 @@ struct JobListView: View {
             }
         }
         .navigationTitle(viewModel.sourceName)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
