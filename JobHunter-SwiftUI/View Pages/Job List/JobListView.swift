@@ -10,7 +10,7 @@ import SwiftUI
 struct JobListView: View {
     @StateObject var viewModel: JobListViewModel
     @State private var selectedJob: Job?
-    
+
     var body: some View {
         List {
             ForEach(viewModel.jobs) { job in
@@ -19,7 +19,7 @@ struct JobListView: View {
                         .padding(.vertical, 8.0)
                 })
             }
-            
+
             HStack {
                 Spacer()
                 ProgressView()
@@ -31,8 +31,9 @@ struct JobListView: View {
                 Spacer()
             }
         }
-        .sheet(item: $selectedJob, content: { job in
+        .fullScreenCover(item: $selectedJob, content: { job in
             JobWebPageView(url: job.url)
+                .ignoresSafeArea(.container, edges: .all)
         })
         .navigationTitle(viewModel.sourceName)
         .navigationBarTitleDisplayMode(.inline)
