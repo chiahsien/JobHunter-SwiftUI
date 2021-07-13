@@ -38,6 +38,7 @@ final class JobListViewModel: ObservableObject {
         isFetchingJobs = true
 
         fetcher.fetchJobs(at: page)
+            .receive(on: DispatchQueue.main)
             .sink { [unowned self] completion in
                 if case .failure(let error) = completion {
                     self.error = error

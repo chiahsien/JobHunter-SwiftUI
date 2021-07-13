@@ -21,6 +21,7 @@
 		52154001269AD2AE0086ED57 /* MeetJobsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52153FFD269AD2AE0086ED57 /* MeetJobsFetcher.swift */; };
 		52EE36BF269AE10900C56BB0 /* JobListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE36BE269AE10900C56BB0 /* JobListView.swift */; };
 		52EE36C2269AE4C700C56BB0 /* JobListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE36C1269AE4C700C56BB0 /* JobListViewModel.swift */; };
+		52F520CB269C82D90072988D /* JobWebPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F520CA269C82D90072988D /* JobWebPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		52153FFD269AD2AE0086ED57 /* MeetJobsFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetJobsFetcher.swift; sourceTree = "<group>"; };
 		52EE36BE269AE10900C56BB0 /* JobListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListView.swift; sourceTree = "<group>"; };
 		52EE36C1269AE4C700C56BB0 /* JobListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobListViewModel.swift; sourceTree = "<group>"; };
+		52F520CA269C82D90072988D /* JobWebPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobWebPageView.swift; sourceTree = "<group>"; };
 		65326206F809A28882D0006B /* Pods_JobHunter_SwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobHunter_SwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9757E2005546464B133115A /* Pods-JobHunter-SwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobHunter-SwiftUI.release.xcconfig"; path = "Target Support Files/Pods-JobHunter-SwiftUI/Pods-JobHunter-SwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,6 +124,7 @@
 			children = (
 				52EE36C4269AE4FA00C56BB0 /* Job List */,
 				52EE36C3269AE4E800C56BB0 /* Job Source */,
+				52F520C9269C82B90072988D /* Job Web Page */,
 			);
 			path = "View Pages";
 			sourceTree = "<group>";
@@ -141,6 +144,14 @@
 				52EE36C1269AE4C700C56BB0 /* JobListViewModel.swift */,
 			);
 			path = "Job List";
+			sourceTree = "<group>";
+		};
+		52F520C9269C82B90072988D /* Job Web Page */ = {
+			isa = PBXGroup;
+			children = (
+				52F520CA269C82D90072988D /* JobWebPageView.swift */,
+			);
+			path = "Job Web Page";
 			sourceTree = "<group>";
 		};
 		6F7C77E59A0E8B2C41669643 /* Pods */ = {
@@ -282,6 +293,7 @@
 				52EE36C2269AE4C700C56BB0 /* JobListViewModel.swift in Sources */,
 				52153FF8269AA86F0086ED57 /* JobModel.swift in Sources */,
 				52153FF42699F6160086ED57 /* JobSourceView.swift in Sources */,
+				52F520CB269C82D90072988D /* JobWebPageView.swift in Sources */,
 				52154001269AD2AE0086ED57 /* MeetJobsFetcher.swift in Sources */,
 				52153FFE269AD2AE0086ED57 /* YouratorFetcher.swift in Sources */,
 			);

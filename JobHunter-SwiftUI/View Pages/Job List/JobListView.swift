@@ -9,14 +9,17 @@ import SwiftUI
 
 struct JobListView: View {
     @StateObject var viewModel: JobListViewModel
-
+    @State private var selectedJob: Job?
+    
     var body: some View {
         List {
-            ForEach(viewModel.jobs, id: \.url) { job in
-                JobItemView(job: job)
-                    .padding(.vertical, 8.0)
+            ForEach(viewModel.jobs) { job in
+                Button(action: { self.selectedJob = job }, label: {
+                    JobItemView(job: job)
+                        .padding(.vertical, 8.0)
+                })
             }
-
+            
             HStack {
                 Spacer()
                 ProgressView()
@@ -28,6 +31,9 @@ struct JobListView: View {
                 Spacer()
             }
         }
+        .sheet(item: $selectedJob, content: { job in
+            JobWebPageView(url: job.url)
+        })
         .navigationTitle(viewModel.sourceName)
         .navigationBarTitleDisplayMode(.inline)
     }

@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct Job {
+struct Job: Identifiable {
+    var id: String { url.absoluteString }
+
     let title: String
     let company: String
     let url: URL
