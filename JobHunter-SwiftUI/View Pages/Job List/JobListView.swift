@@ -33,7 +33,7 @@ struct JobListView: View {
         }
         .fullScreenCover(item: $selectedJob, content: { job in
             JobWebPageView(url: job.url)
-                .ignoresSafeArea(.container, edges: .all)
+                .ignoresSafeArea()
         })
         .navigationTitle(viewModel.sourceName)
         .navigationBarTitleDisplayMode(.inline)

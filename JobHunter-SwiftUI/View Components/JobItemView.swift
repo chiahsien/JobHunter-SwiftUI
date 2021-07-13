@@ -31,7 +31,7 @@ struct JobItemView: View {
 
                 VStack(alignment: .leading, spacing: 4.0) {
                     Text(job.title)
-                        .font(.title3)
+                        .font(.headline)
                     Text(job.company)
                         .foregroundColor(.gray)
                 }
@@ -39,7 +39,7 @@ struct JobItemView: View {
             .padding(.bottom, 8.0)
 
             if job.location != nil {
-                JobDetailView(imageName: "mappin.circle", info: job.location!, infoColor: .black)
+                JobDetailView(imageName: "mappin.circle", info: job.location!, infoColor: .primary)
             }
 
             if job.salary != nil {
@@ -83,6 +83,10 @@ struct JobItemView_Previews: PreviewProvider {
             tags: ["Apple", "iOS", "Change the world", "Richest Company", "iPhone", "iPad"]
         )
 
-        JobItemView(job: job)
+        Group {
+            JobItemView(job: job)
+            JobItemView(job: job)
+                .preferredColorScheme(.dark)
+        }
     }
 }
